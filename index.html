@@ -1,385 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alpha eFootball</title>
-
-<link rel="stylesheet" href="css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <header>
-
-<div class="logo">
-⚽ Alpha eFootball
-</div>
-
-<nav>
-
-<a href="#">Home</a>
-<a href="#">Tournaments</a>
-<a href="#">Leaderboard</a>
-<a href="#">Players</a>
-<a href="#">Store</a>
-<a href="login.html">Login</a>
-
-</nav>
-
+    <h1>🏫 School Portal</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
 </header>
 
 <section class="hero">
-
-<div class="hero-content">
-
-<h1>WELCOME TO ALPHA EFOOTBALL</h1>
-
-<p>
-
-Compete against the world's best players.
-
-Join tournaments.
-
-Win amazing prizes.
-
-Build your legacy.
-
-</p>
-
-<a href="register.html" class="btn">
-
-PLAY NOW
-
-</a>
-
-</div>
-
-</section>
-
-<section class="features">
-
-<h2>Why Join Alpha?</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>🏆 Daily Tournaments</h3>
-
-<p>
-
-Compete every day and win rewards.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>⚽ Online Matches</h3>
-
-<p>
-
-Play players worldwide.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🎖 Leaderboards</h3>
-
-<p>
-
-Climb the rankings.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>💬 Community Chat</h3>
-
-<p>
-
-Meet teammates and rivals.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="tournaments">
-
-<h2>Upcoming Tournament</h2>
-
-<div class="tournament-box">
-
-<h3>Alpha Champions League</h3>
-
-<p>Date: August 15, 2026</p>
-
-<p>Prize Pool: ₦500,000</p>
-
-<p>Entry Fee: Free</p>
-
-<button>Register</button>
-
-</div>
-
-</section>
-
-<section class="leaderboard">
-
-<h2>Top Players</h2>
-
-<table>
-
-<tr>
-
-<th>Rank</th>
-
-<th>Player</th>
-
-<th>Points</th>
-
-</tr>
-
-<tr>
-
-<td>1</td>
-
-<td>AlphaKing</td>
-
-<td>2200</td>
-
-</tr>
-
-<tr>
-
-<td>2</td>
-
-<td>ProLegend</td>
-
-<td>2105</td>
-
-</tr>
-
-<tr>
-
-<td>3</td>
-
-<td>ShadowFC</td>
-
-<td>2060</td>
-
-</tr>
-
-</table>
-
-</section>
-
-<section class="news">
-
-<h2>Latest News</h2>
-
-<div class="news-card">
-
-<h3>Season 1 Begins</h3>
-
-<p>
-
-Register now and compete against elite players.
-
-</p>
-
-</div>
-
+    <h2>Welcome to the School Portal</h2>
+    <p>Access your results, timetable, school fees, and profile online.</p>
+    <a href="login.html" class="btn">Student Login</a>
 </section>
 
 <footer>
-
-<p>
-
-© 2026 Alpha eFootball
-
-All Rights Reserved.
-
-</p>
-
+    <p>&copy; 2026 School Portal. All rights reserved.</p>
 </footer>
 
 <script src="js/app.js"></script>
-
 <script src="script.js"></script>
 </body>
 </html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Alpha eFootball | Login</title>
-
-<link rel="stylesheet" href="css/login.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal Login</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
-
 <body>
 
-<div class="container">
+<div class="login-container">
+    <h1>🏫 School Portal</h1>
 
-<div class="login-box">
+    <form action="dashboard.html">
+        <input type="text" placeholder="Student ID" required>
 
-<div class="logo">
+        <input type="password" id="password" placeholder="Password" required>
 
-<h1>⚽ Alpha eFootball</h1>
+        <button type="button" onclick="togglePassword()">Show Password</button>
 
-<p>Sign in to continue your football journey.</p>
+        <button type="submit">Login</button>
 
-</div>
+        <p><a href="#">Forgot Password?</a></p>
 
-<form id="loginForm">
-
-<div class="input-group">
-
-<label>Email Address</label>
-
-<input
-type="email"
-id="email"
-placeholder="Enter your email"
-required>
-
-</div>
-
-<div class="input-group">
-
-<label>Password</label>
-
-<div class="password-box">
-
-<input
-type="password"
-id="password"
-placeholder="Enter your password"
-required>
-
-<button
-type="button"
-id="togglePassword">
-
-👁
-
-</button>
-
-</div>
-
-</div>
-
-<div class="options">
-
-<label>
-
-<input type="checkbox">
-
-Remember Me
-
-</label>
-
-<a href="#">
-
-Forgot Password?
-
-</a>
-
-</div>
-
-<button
-type="submit"
-class="login-btn">
-
-LOGIN
-
-</button>
-
-</form>
-
-<div class="register-link">
-
-Don't have an account?
-
-<a href="register.html">
-
-Create One
-
-</a>
-
-</div>
-
-</div>
-
+        <p>Don't have an account?
+            <a href="register.html">Register</a>
+        </p>
+    </form>
 </div>
 
 <script>
+function togglePassword() {
+    let password = document.getElementById("password");
 
-const togglePassword =
-document.getElementById("togglePassword");
-
-const password =
-document.getElementById("password");
-
-togglePassword.onclick = function(){
-
-if(password.type==="password"){
-
-password.type="text";
-
-togglePassword.innerHTML="🙈";
-
-}else{
-
-password.type="password";
-
-togglePassword.innerHTML="👁";
-
+    if (password.type === "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
 }
-
-}
-
-document.getElementById("loginForm").addEventListener("submit",function(e){
-
-e.preventDefault();
-
-let email=document.getElementById("email").value;
-
-let password=document.getElementById("password").value;
-
-if(email===""||password===""){
-
-alert("Please complete all fields.");
-
-return;
-
-}
-
-alert("Login successful! (Backend connection will be added later)");
-
-window.location.href="dashboard.html";
-
-});
-
 </script>
 
 </body>
@@ -387,255 +78,465 @@ window.location.href="dashboard.html";
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Alpha eFootball | Register</title>
-
-<link rel="stylesheet" href="css/login.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="css/register.css">
 </head>
-
 <body>
 
-<div class="container">
+<div class="register-container">
 
-<div class="login-box">
+    <h1>🏫 Student Registration</h1>
 
-<h1>⚽ Alpha eFootball</h1>
+    <form action="dashboard.html">
 
-<p>Create your player account</p>
+        <input type="text" placeholder="Full Name" required>
 
-<form id="registerForm">
+        <input type="text" placeholder="Admission Number" required>
 
-<input type="text"
-id="fullname"
-placeholder="Full Name"
-required>
+        <input type="email" placeholder="Email Address" required>
 
-<input type="text"
-id="username"
-placeholder="Username"
-required>
+        <input type="tel" placeholder="Phone Number" required>
 
-<input type="email"
-id="email"
-placeholder="Email Address"
-required>
+        <select required>
+            <option value="">Select Class</option>
+            <option>JSS1</option>
+            <option>JSS2</option>
+            <option>JSS3</option>
+            <option>SS1</option>
+            <option>SS2</option>
+            <option>SS3</option>
+        </select>
 
-<input type="password"
-id="password"
-placeholder="Password"
-required>
+        <input type="password" placeholder="Password" required>
 
-<input type="password"
-id="confirm"
-placeholder="Confirm Password"
-required>
+        <input type="password" placeholder="Confirm Password" required>
 
-<button type="submit">
+        <button type="submit">Create Account</button>
 
-CREATE ACCOUNT
+    </form>
 
-</button>
-
-</form>
-
-<p>
-
-Already have an account?
-
-<a href="login.html">
-
-Login Here
-
-</a>
-
-</p>
+    <p>Already have an account?
+        <a href="login.html">Login</a>
+    </p>
 
 </div>
-
-</div>
-
-<script>
-
-document.getElementById("registerForm").addEventListener("submit",function(e){
-
-e.preventDefault();
-
-let pass=document.getElementById("password").value;
-
-let confirm=document.getElementById("confirm").value;
-
-if(pass!==confirm){
-
-alert("Passwords do not match");
-
-return;
-
-}
-
-alert("Registration Successful!");
-
-window.location.href="login.html";
-
-});
-
-</script>
 
 </body>
-
 </html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Alpha eFootball Dashboard</title>
-
+<title>Student Dashboard</title>
 <link rel="stylesheet" href="css/dashboard.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
 <header>
-
-<div class="logo">
-⚽ Alpha eFootball
-</div>
-
-<nav>
-
-<a href="dashboard.html">Dashboard</a>
-
-<a href="tournaments.html">Tournaments</a>
-
-<a href="leaderboard.html">Leaderboard</a>
-
-<a href="profile.html">Profile</a>
-
-<a href="login.html">Logout</a>
-
-</nav>
-
+    <h2>🏫 School Portal Dashboard</h2>
 </header>
 
-<div class="dashboard">
+<div class="container">
 
-<div class="profile-card">
+<div class="profile card">
+<h3>Student Profile</h3>
+<p><strong>Name:</strong> John Doe</p>
+<p><strong>Admission No:</strong> SCH2026001</p>
+<p><strong>Class:</strong> SS2</p>
+<p><strong>Email:</strong> student@example.com</p>
+</div>
 
-<h2>Welcome Player</h2>
+<div class="card">
+<h3>📊 Attendance</h3>
+<h1>95%</h1>
+</div>
 
-<img src="images/logo.png" width="120">
+<div class="card">
+<h3>💳 School Fees</h3>
+<p>Status: <span class="paid">Paid</span></p>
+</div>
 
-<h3>Username</h3>
+<div class="card">
+<h3>📚 Registered Subjects</h3>
+<ul>
+<li>Mathematics</li>
+<li>English</li>
+<li>Physics</li>
+<li>Chemistry</li>
+<li>Biology</li>
+</ul>
+</div>
 
-<p>Level: 15</p>
+<div class="card">
+<h3>📝 Examination Results</h3>
 
-<p>Ranking: Gold II</p>
+<table>
+<tr>
+<th>Subject</th>
+<th>Score</th>
+</tr>
 
-<p>Coins: 15,000</p>
+<tr>
+<td>Mathematics</td>
+<td>92</td>
+</tr>
+
+<tr>
+<td>English</td>
+<td>88</td>
+</tr>
+
+<tr>
+<td>Physics</td>
+<td>85</td>
+</tr>
+
+<tr>
+<td>Chemistry</td>
+<td>90</td>
+</tr>
+
+<tr>
+<td>Biology</td>
+<td>94</td>
+</tr>
+
+</table>
 
 </div>
 
-<div class="content">
+<div class="card">
+<h3>📅 Today's Timetable</h3>
+
+<ul>
+<li>8:00 AM - Mathematics</li>
+<li>9:00 AM - English</li>
+<li>10:00 AM - Physics</li>
+<li>11:00 AM - Chemistry</li>
+<li>12:00 PM - Biology</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>📢 School News</h3>
+
+<p>
+Welcome back to the new academic session.
+Mid-term examinations begin next month.
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Results</title>
+<link rel="stylesheet" href="css/results.css">
+</head>
+
+<body>
+
+<header>
+<h1>📝 Student Result Management</h1>
+</header>
+
+<div class="container">
 
 <div class="card">
 
-<h2>Upcoming Tournament</h2>
+<h2>Enter Student Scores</h2>
 
-<p>
+<form>
 
-Alpha Champions League
+<input type="text" placeholder="Student Name" required>
 
-</p>
+<input type="text" placeholder="Admission Number" required>
 
-<p>
+<input type="number" id="math" placeholder="Mathematics">
 
-Prize Pool: ₦500,000
+<input type="number" id="english" placeholder="English">
 
-</p>
+<input type="number" id="physics" placeholder="Physics">
 
-<button>
+<input type="number" id="chemistry" placeholder="Chemistry">
 
-Join Tournament
+<input type="number" id="biology" placeholder="Biology">
 
+<button type="button" onclick="calculateResult()">
+Calculate Result
+</button>
+
+</form>
+
+</div>
+
+<div class="card">
+
+<h2>Result Summary</h2>
+
+<p><strong>Total:</strong> <span id="total">0</span></p>
+
+<p><strong>Average:</strong> <span id="average">0</span></p>
+
+<p><strong>Grade:</strong> <span id="grade">-</span></p>
+
+<p><strong>Remark:</strong> <span id="remark">-</span></p>
+
+</div>
+
+</div>
+
+<script src="js/results.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Fees Portal</title>
+<link rel="stylesheet" href="css/fees.css">
+</head>
+
+<body>
+
+<header>
+<h1>💳 School Fee Management</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Student Information</h2>
+
+<p><strong>Name:</strong> John Doe</p>
+<p><strong>Admission No:</strong> SCH2026001</p>
+<p><strong>Class:</strong> SS2</p>
+
+</div>
+
+<div class="card">
+
+<h2>Fee Summary</h2>
+
+<table>
+
+<tr>
+<th>Fee Type</th>
+<th>Amount</th>
+</tr>
+
+<tr>
+<td>Tuition Fee</td>
+<td>₦120,000</td>
+</tr>
+
+<tr>
+<td>Library Fee</td>
+<td>₦10,000</td>
+</tr>
+
+<tr>
+<td>Laboratory Fee</td>
+<td>₦15,000</td>
+</tr>
+
+<tr>
+<td>Sports Fee</td>
+<td>₦5,000</td>
+</tr>
+
+<tr>
+<th>Total</th>
+<th>₦150,000</th>
+</tr>
+
+</table>
+
+<button onclick="payNow()">
+Pay School Fees
 </button>
 
 </div>
 
 <div class="card">
 
-<h2>Latest Match</h2>
+<h2>Payment Status</h2>
 
-<p>
-
-You 3 - 1 Opponent
-
+<p id="status">
+❌ Not Paid
 </p>
 
 </div>
 
+</div>
+
+<script src="js/fees.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Timetable</title>
+<link rel="stylesheet" href="css/timetable.css">
+</head>
+
+<body>
+
+<header>
+<h1>📅 School Timetable</h1>
+</header>
+
+<div class="container">
+
+<table>
+
+<tr>
+<th>Time</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+</tr>
+
+<tr>
+<td>8:00 - 9:00</td>
+<td>Mathematics</td>
+<td>English</td>
+<td>Physics</td>
+<td>Chemistry</td>
+<td>Biology</td>
+</tr>
+
+<tr>
+<td>9:00 - 10:00</td>
+<td>English</td>
+<td>Mathematics</td>
+<td>Biology</td>
+<td>Computer</td>
+<td>Economics</td>
+</tr>
+
+<tr>
+<td>10:00 - 11:00</td>
+<td>Physics</td>
+<td>Chemistry</td>
+<td>Mathematics</td>
+<td>English</td>
+<td>Government</td>
+</tr>
+
+<tr>
+<td>11:00 - 12:00</td>
+<td>Break</td>
+<td>Break</td>
+<td>Break</td>
+<td>Break</td>
+<td>Break</td>
+</tr>
+
+<tr>
+<td>12:00 - 1:00</td>
+<td>Chemistry</td>
+<td>Biology</td>
+<td>Computer</td>
+<td>Economics</td>
+<td>Civic Education</td>
+</tr>
+
+<tr>
+<td>1:00 - 2:00</td>
+<td>Computer</td>
+<td>Government</td>
+<td>Economics</td>
+<td>Mathematics</td>
+<td>English</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Management</title>
+<link rel="stylesheet" href="css/library.css">
+</head>
+
+<body>
+
+<header>
+<h1>📚 School Library</h1>
+</header>
+
+<div class="container">
+
 <div class="card">
 
-<h2>Notifications</h2>
+<h2>Search Books</h2>
 
-<ul>
+<input type="text" id="searchBook" placeholder="Search by title or author">
 
-<li>✔ Registration successful</li>
-
-<li>✔ New tournament available</li>
-
-<li>✔ Weekly rewards ready</li>
-
-</ul>
+<button onclick="searchBook()">Search</button>
 
 </div>
 
 <div class="card">
 
-<h2>Leaderboard Preview</h2>
+<h2>Available Books</h2>
 
 <table>
 
 <tr>
-
-<th>Rank</th>
-
-<th>Player</th>
-
+<th>Book</th>
+<th>Author</th>
+<th>Status</th>
 </tr>
 
 <tr>
-
-<td>1</td>
-
-<td>AlphaKing</td>
-
+<td>New General Mathematics</td>
+<td>M.F. Macrae</td>
+<td>Available</td>
 </tr>
 
 <tr>
-
-<td>2</td>
-
-<td>ProLegend</td>
-
+<td>Essential Biology</td>
+<td>M.C. Michael</td>
+<td>Available</td>
 </tr>
 
 <tr>
+<td>New School Chemistry</td>
+<td>Ababio</td>
+<td>Borrowed</td>
+</tr>
 
-<td>3</td>
-
-<td>ShadowFC</td>
-
+<tr>
+<td>Physics for Senior Secondary</td>
+<td>Nelkon</td>
+<td>Available</td>
 </tr>
 
 </table>
@@ -644,967 +545,620 @@ You 3 - 1 Opponent
 
 </div>
 
-</div>
-
-<script src="js/dashboard.js"></script>
+<script src="js/library.js"></script>
 
 </body>
-
 </html>
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Orbitron',sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance Management</title>
+<link rel="stylesheet" href="css/attendance.css">
+</head>
 
-body{
-    background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
-    url("https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1600&q=80");
-    background-size:cover;
-    background-position:center;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
+<body>
 
-.container{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
+<header>
+<h1>📋 Attendance Management</h1>
+</header>
 
-.login-box{
-    width:420px;
-    background:rgba(15,20,35,.92);
-    border:2px solid #00e5ff;
-    border-radius:15px;
-    padding:35px;
-    box-shadow:0 0 25px #00e5ff;
-    color:#fff;
-}
+<div class="container">
 
-.login-box h1{
-    text-align:center;
-    margin-bottom:10px;
-    color:#00e5ff;
-}
+<div class="card">
 
-.login-box p{
-    text-align:center;
-    margin-bottom:25px;
-}
+<h2>Mark Attendance</h2>
 
-input{
-    width:100%;
-    padding:14px;
-    margin:10px 0;
-    border:none;
-    outline:none;
-    border-radius:8px;
-    background:#1b2338;
-    color:#fff;
-    font-size:15px;
-}
+<table>
 
-input:focus{
-    border:2px solid #00e5ff;
-}
+<tr>
+<th>Student</th>
+<th>Present</th>
+</tr>
 
-button{
-    width:100%;
-    padding:15px;
-    margin-top:20px;
-    border:none;
-    border-radius:8px;
-    background:#00e5ff;
-    color:#000;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
-}
+<tr>
+<td>John Doe</td>
+<td><input type="checkbox"></td>
+</tr>
 
-button:hover{
-    background:#00b8d4;
-    transform:scale(1.03);
-}
+<tr>
+<td>Mary James</td>
+<td><input type="checkbox"></td>
+</tr>
 
-a{
-    color:#00e5ff;
-    text-decoration:none;
-}
+<tr>
+<td>David Paul</td>
+<td><input type="checkbox"></td>
+</tr>
 
-a:hover{
-    text-decoration:underline;
-}
+<tr>
+<td>Grace Johnson</td>
+<td><input type="checkbox"></td>
+</tr>
 
-.options{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-top:10px;
-    font-size:14px;
-}
+<tr>
+<td>Samuel Peter</td>
+<td><input type="checkbox"></td>
+</tr>
 
-.password-box{
-    display:flex;
-    gap:8px;
-}
+</table>
 
-.password-box input{
-    flex:1;
-}
+<button onclick="saveAttendance()">Save Attendance</button>
 
-.password-box button{
-    width:55px;
-    margin-top:10px;
-}
+</div>
 
-@media(max-width:600px){
+<div class="card">
 
-.login-box{
+<h2>Today's Summary</h2>
 
-width:95%;
+<p>Total Students: <strong>5</strong></p>
 
-padding:25px;
+<p>Present: <span id="present">0</span></p>
 
-}
+<p>Absent: <span id="absent">5</span></p>
 
-}
-</style>
+</div>
+
+</div>
+
+<script src="js/attendance.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment Management</title>
+<link rel="stylesheet" href="css/assignments.css">
+</head>
+
+<body>
+
+<header>
+<h1>📚 Assignment Management</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Create Assignment</h2>
+
+<form>
+
+<input type="text" id="title" placeholder="Assignment Title" required>
+
+<textarea id="description" placeholder="Assignment Description" rows="5"></textarea>
+
+<input type="date" id="deadline">
+
+<button type="button" onclick="publishAssignment()">
+Publish Assignment
+</button>
+
+</form>
+
+</div>
+
+<div class="card">
+
+<h2>Published Assignments</h2>
+
+<ul id="assignmentList">
+<li>No assignments published yet.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Student Submission</h2>
+
+<input type="text" placeholder="Student Name">
+
+<input type="file">
+
+<button>Submit Assignment</button>
+
+</div>
+
+</div>
+
+<script src="js/assignments.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile</title>
+<link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+
+<header>
+<h1>👤 Student Profile</h1>
+</header>
+
+<div class="container">
+<input id="fullName" type="text">
+
+<input id="email" type="email">
+
+<input id="phone" type="text">
+
+<input id="admissionNumber" type="text">
+
+<input id="department" type="text">
+
+<input id="password" type="password">
+<script src="js/register.js"></script>
+<form id="uploadForm" enctype="multipart/form-data">
+
+<input
+type="file"
+name="image"
+id="image"
+accept="image/*">
+
+<button type="submit">
+Upload Profile Picture
+</button>
+
+</form>
+
 <script>
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-const http = require("http");
-const { Server } = require("socket.io");
+const form=document.getElementById("uploadForm");
 
-const app = express();
-const server = http.createServer(app);
+form.addEventListener("submit",async(e)=>{
 
-const io = new Server(server, {
-    cors: {
-        origin: "*"
-    }
-});
+e.preventDefault();
 
-const PORT = process.env.PORT || 3000;
+const data=new FormData(form);
 
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+const token=localStorage.getItem("token");
 
-mongoose.connect("mongodb://127.0.0.1:27017/alpha_efootball", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-.then(() => console.log("MongoDB Connected"))
-.catch(err => console.log(err));
+const response=await fetch("http://localhost:5000/api/upload/profile",{
 
-const UserSchema = new mongoose.Schema({
-    username: String,
-    email: String,
-    password: String,
-    coins: {
-        type: Number,
-        default: 1000
-    },
-    rank: {
-        type: String,
-        default: "Bronze"
-    },
-    isAdmin: {
-        type: Boolean,
-        default: false
-    }
-});
+method:"POST",
 
-const User = mongoose.model("User", UserSchema);
+headers:{
+Authorization:token
+},
 
-app.get("/", (req, res) => {
-    res.send("Alpha eFootball Server Running");
-});
-
-app.post("/register", async (req, res) => {
-
-    const { username, email, password } = req.body;
-
-    const hashedPassword = await bcrypt.hash(password, 10);
-
-    const user = new User({
-        username,
-        email,
-        password: hashedPassword
-    });
-
-    await user.save();
-
-    res.json({
-        success: true,
-        message: "Registration Successful"
-    });
+body:data
 
 });
 
-app.post("/login", async (req, res) => {
+const result=await response.json();
 
-    const { email, password } = req.body;
-
-    const user = await User.findOne({ email });
-
-    if (!user) {
-
-        return res.status(404).json({
-            success: false,
-            message: "User not found"
-        });
-
-    }
-
-    const validPassword = await bcrypt.compare(password, user.password);
-
-    if (!validPassword) {
-
-        return res.status(401).json({
-            success: false,
-            message: "Incorrect Password"
-        });
-
-    }
-
-    const token = jwt.sign(
-        {
-            id: user._id
-        },
-        "ALPHA_SECRET_KEY",
-        {
-            expiresIn: "7d"
-        }
-    );
-
-    res.json({
-        success: true,
-        token,
-        username: user.username,
-        coins: user.coins,
-        rank: user.rank
-    });
+alert(result.message);
 
 });
-
-io.on("connection", socket => {
-
-    console.log("Player Connected");
-
-    socket.on("chat-message", msg => {
-
-        io.emit("chat-message", msg);
-
-    });
-
-    socket.on("disconnect", () => {
-
-        console.log("Player Disconnected");
-
-    });
-
-});
-
-server.listen(PORT, () => {
-
-    console.log(`Server Running on Port ${PORT}`);
-
-});
-const mongoose = require("mongoose");
-
-const UserSchema = new mongoose.Schema({
-
-    username:{
-        type:String,
-        required:true,
-        unique:true
-    },
-
-    email:{
-        type:String,
-        required:true,
-        unique:true
-    },
-
-    password:{
-        type:String,
-        required:true
-    },
-
-    profileImage:{
-        type:String,
-        default:"default.png"
-    },
-
-    coins:{
-        type:Number,
-        default:1000
-    },
-
-    level:{
-        type:Number,
-        default:1
-    },
-
-    xp:{
-        type:Number,
-        default:0
-    },
-
-    rank:{
-        type:String,
-        default:"Bronze"
-    },
-
-    wins:{
-        type:Number,
-        default:0
-    },
-
-    losses:{
-        type:Number,
-        default:0
-    },
-
-    draws:{
-        type:Number,
-        default:0
-    },
-
-    goals:{
-        type:Number,
-        default:0
-    },
-
-    assists:{
-        type:Number,
-        default:0
-    },
-
-    country:{
-        type:String,
-        default:"Nigeria"
-    },
-
-    favouriteClub:{
-        type:String,
-        default:"Barcelona"
-    },
-
-    isAdmin:{
-        type:Boolean,
-        default:false
-    },
-
-    createdAt:{
-        type:Date,
-        default:Date.now
-    }
-
-});
-
-module.exports = mongoose.model("User",UserSchema);
-const mongoose = require("mongoose");
-
-const TournamentSchema = new mongoose.Schema({
-
-    name:{
-        type:String,
-        required:true
-    },
-
-    description:{
-        type:String,
-        default:"Alpha eFootball Tournament"
-    },
-
-    game:{
-        type:String,
-        default:"eFootball"
-    },
-
-    organizer:{
-        type:String,
-        default:"Alpha Gaming"
-    },
-
-    prizePool:{
-        type:Number,
-        default:500000
-    },
-
-    entryFee:{
-        type:Number,
-        default:0
-    },
-
-    maxPlayers:{
-        type:Number,
-        default:32
-    },
-
-    players:[
-        {
-            type:mongoose.Schema.Types.ObjectId,
-            ref:"User"
-        }
-    ],
-
-    tournamentStatus:{
-        type:String,
-        enum:["Upcoming","Open","In Progress","Completed"],
-        default:"Upcoming"
-    },
-
-    winner:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"User"
-    },
-
-    startDate:{
-        type:Date,
-        required:true
-    },
-
-    endDate:{
-        type:Date
-    },
-
-    createdAt:{
-        type:Date,
-        default:Date.now
-    }
-
-});
-
-module.exports = mongoose.model("Tournament", TournamentSchema);
-const mongoose = require("mongoose");
-
-const MatchSchema = new mongoose.Schema({
-
-    tournament:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"Tournament",
-        required:true
-    },
-
-    playerOne:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"User",
-        required:true
-    },
-
-    playerTwo:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"User",
-        required:true
-    },
-
-    playerOneScore:{
-        type:Number,
-        default:0
-    },
-
-    playerTwoScore:{
-        type:Number,
-        default:0
-    },
-
-    winner:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"User",
-        default:null
-    },
-
-    matchStatus:{
-        type:String,
-        enum:["Scheduled","Live","Completed","Cancelled"],
-        default:"Scheduled"
-    },
-
-    round:{
-        type:String,
-        default:"Round of 32"
-    },
-
-    matchDate:{
-        type:Date,
-        required:true
-    },
-
-    stadium:{
-        type:String,
-        default:"eFootball Stadium"
-    },
-
-    createdAt:{
-        type:Date,
-        default:Date.now
-    }
-
-});
-
-module.exports = mongoose.model("Match", MatchSchema);
-const express = require("express");
-const router = express.Router();
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-
-const User = require("../models/User");
-
-const JWT_SECRET = process.env.JWT_SECRET || "CHANGE_THIS_TO_A_LONG_RANDOM_SECRET";
-
-// Register Player
-router.post("/register", async (req, res) => {
-
-    try {
-
-        const { username, email, password } = req.body;
-
-        if (!username || !email || !password) {
-
-            return res.status(400).json({
-                success:false,
-                message:"All fields are required."
-            });
-
-        }
-
-        const existingUser = await User.findOne({
-            $or:[
-                {email},
-                {username}
-            ]
-        });
-
-        if(existingUser){
-
-            return res.status(409).json({
-                success:false,
-                message:"Username or email already exists."
-            });
-
-        }
-
-        const hashedPassword = await bcrypt.hash(password,12);
-
-        const user = await User.create({
-
-            username,
-            email,
-            password:hashedPassword
-
-        });
-
-        res.status(201).json({
-
-            success:true,
-            message:"Registration successful.",
-            user:{
-                id:user._id,
-                username:user.username,
-                email:user.email
-            }
-
-        });
-
-    } catch(error){
-
-        res.status(500).json({
-
-            success:false,
-            message:"Server error."
-
-        });
-
-    }
-
-});
-
-// Login Player
-router.post("/login", async (req,res)=>{
-
-    try{
-
-        const { email,password } = req.body;
-
-        const user = await User.findOne({ email });
-
-        if(!user){
-
-            return res.status(401).json({
-
-                success:false,
-                message:"Invalid email or password."
-
-            });
-
-        }
-
-        const match = await bcrypt.compare(password,user.password);
-
-        if(!match){
-
-            return res.status(401).json({
-
-                success:false,
-                message:"Invalid email or password."
-
-            });
-
-        }
-
-        const token = jwt.sign(
-
-            {
-                id:user._id,
-                username:user.username,
-                isAdmin:user.isAdmin
-            },
-
-            JWT_SECRET,
-
-            {
-                expiresIn:"7d"
-            }
-
-        );
-
-        res.json({
-
-            success:true,
-            token,
-            user:{
-                id:user._id,
-                username:user.username,
-                rank:user.rank,
-                coins:user.coins,
-                level:user.level
-            }
-
-        });
-
-    }catch(error){
-
-        res.status(500).json({
-
-            success:false,
-            message:"Server error."
-
-        });
-
-    }
-
-});
-
-module.exports = router;
-const jwt = require("jsonwebtoken");
-
-const JWT_SECRET = process.env.JWT_SECRET || "CHANGE_THIS_TO_A_LONG_RANDOM_SECRET";
-
-// Verify logged-in user
-const verifyToken = (req, res, next) => {
-
-    const authHeader = req.headers.authorization;
-
-    if (!authHeader) {
-        return res.status(401).json({
-            success: false,
-            message: "Access denied. No token provided."
-        });
-    }
-
-    const token = authHeader.startsWith("Bearer ")
-        ? authHeader.split(" ")[1]
-        : authHeader;
-
-    try {
-
-        const decoded = jwt.verify(token, JWT_SECRET);
-
-        req.user = decoded;
-
-        next();
-
-    } catch (err) {
-
-        return res.status(401).json({
-            success: false,
-            message: "Invalid or expired token."
-        });
-
-    }
-
-};
-
-// Verify Admin
-const verifyAdmin = (req, res, next) => {
-
-    if (!req.user || req.user.isAdmin !== true) {
-
-        return res.status(403).json({
-            success: false,
-            message: "Admin access required."
-        });
-
-    }
-
-    next();
-
-};
-
-module.exports = {
-    verifyToken,
-    verifyAdmin
-};
-const express = require("express");
-const router = express.Router();
-
-const Tournament = require("../models/Tournament");
-const { verifyToken, verifyAdmin } = require("../middleware/auth");
-
-/*
-====================================
-GET ALL TOURNAMENTS
-====================================
-*/
-
-router.get("/", async (req, res) => {
-
-    try {
-
-        const tournaments = await Tournament.find()
-            .populate("players", "username rank")
-            .sort({ createdAt: -1 });
-
-        res.json({
-            success: true,
-            tournaments
-        });
-
-    } catch (err) {
-
-        res.status(500).json({
-            success: false,
-            message: "Unable to load tournaments."
-        });
-
-    }
-
-});
-
-/*
-====================================
-GET SINGLE TOURNAMENT
-====================================
-*/
-
-router.get("/:id", async (req, res) => {
-
-    try {
-
-        const tournament = await Tournament.findById(req.params.id)
-            .populate("players", "username rank");
-
-        if (!tournament) {
-
-            return res.status(404).json({
-                success: false,
-                message: "Tournament not found."
-            });
-
-        }
-
-        res.json({
-            success: true,
-            tournament
-        });
-
-    } catch (err) {
-
-        res.status(500).json({
-            success: false,
-            message: "Server error."
-        });
-
-    }
-
-});
-
-/*
-====================================
-CREATE TOURNAMENT
-ADMIN ONLY
-====================================
-*/
-
-router.post(
-    "/",
-    verifyToken,
-    verifyAdmin,
-    async (req, res) => {
-
-        try {
-
-            const tournament = new Tournament(req.body);
-
-            await tournament.save();
-
-            res.status(201).json({
-                success: true,
-                message: "Tournament created.",
-                tournament
-            });
-
-        } catch (err) {
-
-            res.status(500).json({
-                success: false,
-                message: "Unable to create tournament."
-            });
-
-        }
-
-    }
-);
-
-/*
-====================================
-JOIN TOURNAMENT
-====================================
-*/
-
-router.post(
-    "/:id/join",
-    verifyToken,
-    async (req, res) => {
-
-        try {
-
-            const tournament =
-                await Tournament.findById(req.params.id);
-
-            if (!tournament) {
-
-                return res.status(404).json({
-                    success: false,
-                    message: "Tournament not found."
-                });
-
-            }
-
-            if (
-                tournament.players.includes(req.user.id)
-            ) {
-
-                return res.status(400).json({
-                    success: false,
-                    message: "Already joined."
-                });
-
-            }
-
-            if (
-                tournament.players.length >=
-                tournament.maxPlayers
-            ) {
-
-                return res.status(400).json({
-                    success: false,
-                    message: "Tournament is full."
-                });
-
-            }
-
-            tournament.players.push(req.user.id);
-
-            await tournament.save();
-
-            res.json({
-                success: true,
-                message: "Successfully joined tournament."
-            });
-
-        } catch (err) {
-
-            res.status(500).json({
-                success: false,
-                message: "Server error."
-            });
-
-        }
-
-    }
-);
-
-/*
-====================================
-LEAVE TOURNAMENT
-====================================
-*/
-
-router.post(
-    "/:id/leave",
-    verifyToken,
-    async (req, res) => {
-
-        try {
-
-            const tournament =
-                await Tournament.findById(req.params.id);
-
-            if (!tournament) {
-
-                return res.status(404).json({
-                    success: false,
-                    message: "Tournament not found."
-                });
-
-            }
-
-            tournament.players =
-                tournament.players.filter(
-                    player =>
-                        player.toString() !== req.user.id
-                );
-
-            await tournament.save();
-
-            res.json({
-                success: true,
-                message: "Tournament left successfully."
-            });
-
-        } catch (err) {
-
-            res.status(500).json({
-                success: false,
-                message: "Server error."
-            });
-
-        }
-
-    }
-);
-
-module.exports = router;
-GET    /matches
-GET    /matches/:id
-POST   /matches              (admin)
-PUT    /matches/:id/score     (admin)
-PUT    /matches/:id/start     (admin)
-PUT    /matches/:id/finish    (admin)
-DELETE /matches/:id           (admin)
 </script>
+<!DOCTYPE html>
+<html>
+<head>
+<title>School Chat</title>
+<link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body>
+
+<h2>💬 School Chat</h2>
+
+<div id="messages"></div>
+
+<input
+type="text"
+id="message"
+placeholder="Type message">
+
+<button onclick="sendMessage()">
+Send
+</button>
+
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="js/chat.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha School CBT</title>
+<link rel="stylesheet" href="css/cbt.css">
+</head>
+
+<body>
+
+<header>
+<h1>📝 Computer Based Test (CBT)</h1>
+<div class="timer">
+Time Left: <span id="timer">30:00</span>
+</div>
+</header>
+
+<div class="container">
+
+<div class="question-box">
+
+<h2 id="question">
+Loading question...
+</h2>
+
+<div id="options"></div>
+
+<button onclick="nextQuestion()">
+Next Question
+</button>
+
+</div>
+
+<div class="score">
+
+<h2>Progress</h2>
+
+<p>
+Question
+<span id="currentQuestion">1</span>
+/
+<span id="totalQuestion">10</span>
+</p>
+
+<p>
+Score:
+<span id="score">0</span>
+</p>
+
+</div>
+
+</div>
+
+<script src="js/cbt.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parent Portal</title>
+<link rel="stylesheet" href="css/parent.css">
+</head>
+
+<body>
+
+<header>
+<h1>👨‍👩‍👧 Parent Portal</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Student Information</h2>
+
+<p><strong>Name:</strong> John Doe</p>
+<p><strong>Admission No:</strong> SCH2026001</p>
+<p><strong>Class:</strong> SS2</p>
+<p><strong>Session:</strong> 2026/2027</p>
+
+</div>
+
+<div class="card">
+
+<h2>Academic Summary</h2>
+
+<table>
+
+<tr>
+<th>Subject</th>
+<th>Score</th>
+</tr>
+
+<tr>
+<td>Mathematics</td>
+<td>92</td>
+</tr>
+
+<tr>
+<td>English</td>
+<td>89</td>
+</tr>
+
+<tr>
+<td>Physics</td>
+<td>91</td>
+</tr>
+
+<tr>
+<td>Chemistry</td>
+<td>88</td>
+</tr>
+
+<tr>
+<td>Biology</td>
+<td>94</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Attendance</h2>
+
+<h1>96%</h1>
+
+</div>
+
+<div class="card">
+
+<h2>School Fees</h2>
+
+<p>Status:
+<span class="paid">Paid</span>
+</p>
+
+</div>
+
+<div class="card full">
+
+<h2>Recent Announcements</h2>
+
+<ul>
+
+<li>📢 PTA Meeting - September 15</li>
+
+<li>📝 Mid-Term Examination begins October 15</li>
+
+<li>🏆 Sports Competition next month</li>
+
+<li>📚 Library Week starts Monday</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<script src="js/parent.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Admission</title>
+<link rel="stylesheet" href="css/admission.css">
+</head>
+
+<body>
+
+<header>
+<h1>🎓 Online Admission Portal</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Admission Application Form</h2>
+
+<form id="admissionForm">
+
+<input type="text" id="fullName" placeholder="Full Name" required>
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+<input type="text" id="phone" placeholder="Phone Number" required>
+
+<input type="date" id="dob" required>
+
+<select id="class">
+<option value="">Select Class</option>
+<option>JSS1</option>
+<option>JSS2</option>
+<option>JSS3</option>
+<option>SS1</option>
+<option>SS2</option>
+<option>SS3</option>
+</select>
+
+<textarea id="address" placeholder="Home Address"></textarea>
+
+<button type="submit">Submit Application</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="js/admission.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Payroll</title>
+<link rel="stylesheet" href="css/payroll.css">
+</head>
+
+<body>
+
+<header>
+<h1>💰 Staff Payroll Management</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Payroll Form</h2>
+
+<form id="payrollForm">
+
+<input type="text" id="staffName" placeholder="Staff Name" required>
+
+<input type="text" id="staffId" placeholder="Staff ID" required>
+
+<input type="number" id="basicSalary" placeholder="Basic Salary" required>
+
+<input type="number" id="allowance" placeholder="Allowance" value="0">
+
+<input type="number" id="deduction" placeholder="Deduction" value="0">
+
+<button type="submit">Calculate Salary</button>
+
+</form>
+
+</div>
+
+<div class="card">
+
+<h2>Salary Summary</h2>
+
+<p><strong>Basic Salary:</strong> ₦<span id="salary">0</span></p>
+
+<p><strong>Allowance:</strong> ₦<span id="allow">0</span></p>
+
+<p><strong>Deduction:</strong> ₦<span id="deduct">0</span></p>
+
+<p><strong>Net Salary:</strong> ₦<span id="netSalary">0</span></p>
+
+</div>
+
+</div>
+
+<script src="js/payroll.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Report Card</title>
+<link rel="stylesheet" href="css/report-card.css">
+</head>
+
+<body>
+
+<h1>📄 Student Report Card</h1>
+
+<button id="downloadPDF">
+Download PDF
+</button>
+
+<script src="js/report-card.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Analytics</title>
+
+<link rel="stylesheet" href="css/analytics.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>📊 School Analytics Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2 id="students">0</h2>
+<p>Students</p>
+</div>
+
+<div class="card">
+<h2 id="teachers">0</h2>
+<p>Teachers</p>
+</div>
+
+<div class="card">
+<h2 id="admissions">0</h2>
+<p>Admissions</p>
+</div>
+
+<div class="card">
+<h2 id="users">0</h2>
+<p>Users</p>
+</div>
+
+</div>
+
+<canvas id="chart"></canvas>
+
+<script src="js/analytics.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forgot Password</title>
+</head>
+
+<body>
+
+<h2>Forgot Password</h2>
+
+<form id="forgotForm">
+
+<input
+type="email"
+id="email"
+placeholder="Email"
+required>
+
+<button type="submit">
+Send Reset Link
+</button>
+
+</form>
+
+<script src="js/forgot-password.js"></script>
+
+</body>
+</html>
